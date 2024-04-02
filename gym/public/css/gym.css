@@ -1,0 +1,80 @@
+
+body {
+    font-family:"Oswald", sans-serif;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    background-color: #08080f;
+}
+
+.navbar {
+    background-color: #000000;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px; /* Agrega un relleno para aumentar el espacio alrededor de la barra de navegación */
+}
+
+.navbar-logo img {
+    max-width: 150px; /* Establece un ancho máximo para el logo */
+    height: auto; /* Altura automática para mantener la proporción */
+    margin-left: 50px;
+    margin-right: 20px; /* Agrega un margen derecho para separar el logo de los elementos de la lista */
+}
+
+.navbar ul {
+    font-size: 20px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos de la lista */
+}
+
+.navbar li {
+    margin-right: 50px;
+}
+
+.navbar a {
+    color: rgb(0, 138, 251);
+    text-decoration: none;
+    border: none;
+    padding: 2px 15px;
+    border-radius: 30px;
+
+}
+
+.navbar a:hover {
+    color: #ffffff;
+    background-color: #0037ff;
+}
+
+.navbar button {
+    background-color: #2c32d0;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.navbar button:hover {
+    background-color: #0037ff;
+}
+
+#video-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+#video-section h1 {
+    margin-bottom: 20px;
+}
+
+#video-section video {
+    width: 100%;
+    max-width: 1280px; /* Opcional: establece un ancho máximo para el video */
+}
