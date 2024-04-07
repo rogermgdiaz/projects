@@ -134,6 +134,12 @@ body {
     grid-template-rows: 40px;
     gap: 5px;
     margin-top: 20px;
+    position: absolute;
+    bottom: -60px; /* Ajusta la posición vertical del contenedor de botones */
+    left: 50%; /* Centra los botones horizontalmente */
+    transform: translateX(-50%); /* Centra los botones horizontalmente */
+    width: 100%; /* Ajusta el ancho del contenedor de botones */
+    text-align: center; /* Alinea los botones al centro */
 }
 
 .carousel .list .item .content button{
@@ -144,6 +150,7 @@ body {
     color: rgb(255, 255, 255);
     border:none;
     cursor: pointer;
+    
 }
 
 .carousel .slider-dots {
