@@ -53,7 +53,7 @@ body {
 
 .navbar button {
     font-family: "Oswald", sans-serif;
-    background-color:  #0c0f3db9;;
+    background-color:  #0c0f3db9;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -75,6 +75,12 @@ body {
 .carousel .list .item {
     position: absolute;
     inset: 0 0 0 0;
+    opacity: 0; /* Agregamos un valor inicial de opacidad */
+    transition: opacity 0.5s ease; /* Añadimos una transición suave */
+}
+
+.carousel .list .item.active {
+    opacity: 1; /* Cambiamos la opacidad a 1 cuando la imagen está activa */
 }
 
 .carousel .list .item img {
@@ -93,8 +99,6 @@ body {
     max-height: calc(100% - 20%); /* 100% del alto de la pantalla menos el margen arriba y abajo */
     padding: 25px;
     box-sizing: border-box;
-    color: #0c1030;
-    text-shadow: 0 5px 10px #0004;
     background-color: #0c0f3d61;
     border-radius: 50px;
 }
@@ -121,4 +125,47 @@ body {
     margin: 0; /* Elimina cualquier margen predeterminado */
     padding: 10px; /* Añade espacio interno alrededor del texto */
     word-wrap: break-word; /* Ajusta el texto al tamaño del contenedor */
+}
+
+.carousel .list .item .content .buttons {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(1, 160px);
+    grid-template-rows: 40px;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.carousel .list .item .content button{
+    font-family: "Oswald", sans-serif;
+    font-size: 16px; /* Tamaño de la fuente */
+    background-color:  #0011fffd;
+    border-radius: 15px;
+    color: rgb(255, 255, 255);
+    border:none;
+    cursor: pointer;
+}
+
+.carousel .slider-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex; /* Usamos flexbox para distribuir los puntos horizontalmente */
+    justify-content: center; /* Centramos los puntos horizontalmente */
+}
+
+.carousel .slider-dots .dot {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 0 15px; /* Margen entre los puntos */
+    cursor: pointer;
+}
+
+.carousel .slider-dots .dot.active {
+    background-color: #f9a932;
+    width: 12px;
+    height: 12px; /* Color para indicar la imagen actual */
 }
