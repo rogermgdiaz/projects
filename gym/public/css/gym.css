@@ -1,26 +1,28 @@
-
 body {
-    font-family:"Oswald", sans-serif;
+    font-family: "Oswald", sans-serif;
     padding: 0;
     margin: 0;
-    height: 100%;
-    background-color: #08080f;
+    background-color: #070715;
+    -webkit-user-select: none; /* Para navegadores basados en WebKit como Chrome y Safari */
+    -moz-user-select: none; /* Para navegadores basados en Gecko como Firefox */
+    -ms-user-select: none; /* Para Internet Explorer/Edge */
+    user-select: none; /* Estándar */
 }
 
 .navbar {
-    background-color: #000000;
+    background-color: #020114;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px; /* Agrega un relleno para aumentar el espacio alrededor de la barra de navegación */
+    padding: 15px;
 }
 
 .navbar-logo img {
-    max-width: 150px; /* Establece un ancho máximo para el logo */
-    height: auto; /* Altura automática para mantener la proporción */
+    max-width: 150px;
+    height: auto;
     margin-left: 50px;
-    margin-right: 20px; /* Agrega un margen derecho para separar el logo de los elementos de la lista */
+    margin-right: 20px;
 }
 
 .navbar ul {
@@ -29,7 +31,7 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    align-items: center; /* Centra verticalmente los elementos de la lista */
+    align-items: center;
 }
 
 .navbar li {
@@ -37,12 +39,11 @@ body {
 }
 
 .navbar a {
-    color: rgb(0, 138, 251);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     border: none;
     padding: 2px 15px;
     border-radius: 30px;
-
 }
 
 .navbar a:hover {
@@ -51,7 +52,8 @@ body {
 }
 
 .navbar button {
-    background-color: #2c32d0;
+    font-family: "Oswald", sans-serif;
+    background-color:  #0c0f3db9;;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -63,18 +65,60 @@ body {
     background-color: #0037ff;
 }
 
-#video-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-#video-section h1 {
-    margin-bottom: 20px;
+.carousel {
+    width: 100vw;
+    height: calc(100vh - 85px); /* Ajusta la altura del carrusel restando la altura de la barra de navegación */
+    overflow: hidden;
+    position: relative; /* Añadido */
 }
 
-#video-section video {
+.carousel .list .item {
+    position: absolute;
+    inset: 0 0 0 0;
+}
+
+.carousel .list .item img {
     width: 100%;
-    max-width: 1280px; /* Opcional: establece un ancho máximo para el video */
+    height: 100%;
+    object-fit: cover;
+}
+.carousel .list .item .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 55%;
+    max-width: calc(75% - 20%); /* 50% del ancho de la pantalla menos el margen a la izquierda y a la derecha */
+    max-height: calc(100% - 20%); /* 100% del alto de la pantalla menos el margen arriba y abajo */
+    padding: 25px;
+    box-sizing: border-box;
+    color: #0c1030;
+    text-shadow: 0 5px 10px #0004;
+    background-color: #0c0f3d61;
+    border-radius: 50px;
+}
+
+.carousel .list .item .content .desc {
+    font-family: "Poppins", sans-serif;; /* Familia de fuentes */
+    font-weight: 700; /* Peso de la fuente (negrita) */
+    font-size: 24px; /* Tamaño de la fuente */
+    color: #ffffff; /* Color del texto */
+    text-shadow: 0 9px 9px rgb(0, 0, 0); /* Sombra del texto para resaltar */
+    text-align: center; /* Alineación del texto al centro */
+    margin: 0; /* Elimina cualquier margen predeterminado */
+    padding: 10px; /* Añade espacio interno alrededor del texto */
+    word-wrap: break-word; /* Ajusta el texto al tamaño del contenedor */
+}
+
+.carousel .list .item .content .desc span {
+    font-family: "Oswald", sans-serif;
+    font-weight: 700; /* Peso de la fuente (negrita) */
+    font-size: 36px; /* Tamaño de la fuente */
+    color: #f9a932; /* Color del texto */
+    text-shadow: 0 9px 9px rgb(0, 0, 0); /* Sombra del texto para resaltar */
+    text-align: center; /* Alineación del texto al centro */
+    margin: 0; /* Elimina cualquier margen predeterminado */
+    padding: 10px; /* Añade espacio interno alrededor del texto */
+    word-wrap: break-word; /* Ajusta el texto al tamaño del contenedor */
 }
