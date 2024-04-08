@@ -2,7 +2,7 @@ body {
     font-family: "Oswald", sans-serif;
     padding: 0;
     margin: 0;
-    background-color: #070715;
+    background-color: #020114;
     -webkit-user-select: none; /* Para navegadores basados en WebKit como Chrome y Safari */
     -moz-user-select: none; /* Para navegadores basados en Gecko como Firefox */
     -ms-user-select: none; /* Para Internet Explorer/Edge */
@@ -47,7 +47,6 @@ body {
 }
 
 .navbar a:hover {
-    color: #ffffff;
     background-color: #0037ff;
 }
 
@@ -145,13 +144,26 @@ body {
 .carousel .list .item .content button{
     font-family: "Oswald", sans-serif;
     font-size: 16px; /* Tamaño de la fuente */
-    background-color:  #0011fffd;
+    background-color:  #0c0f3d;
     border-radius: 15px;
     color: rgb(255, 255, 255);
     border:none;
     cursor: pointer;
     
 }
+
+.carousel .list .item .content button:hover {
+    background-color: #0037ff;
+}
+
+.carousel .list .item .content .buttons button:first-child:hover {
+    background-color: #0037ff;
+}
+
+.carousel .list .item .content .buttons button:nth-child(2):hover {
+    background-color: #0037ff;
+}
+
 
 .carousel .slider-dots {
     position: absolute;
