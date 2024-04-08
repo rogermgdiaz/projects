@@ -156,15 +156,6 @@ body {
     background-color: #0037ff;
 }
 
-.carousel .list .item .content .buttons button:first-child:hover {
-    background-color: #0037ff;
-}
-
-.carousel .list .item .content .buttons button:nth-child(2):hover {
-    background-color: #0037ff;
-}
-
-
 .carousel .slider-dots {
     position: absolute;
     bottom: 10px;
@@ -196,9 +187,6 @@ body {
     align-items: center;
 }
 
-.primary-section {
-    background-color: #070715;
-}
 
 .card {
     border: 1px solid rgba(56, 122, 202, 0.283);
@@ -270,15 +258,10 @@ button {
 }
 
 .footer {
-    background-color: #f0f1f3;
     height: 30px;
     display: flex;
     text-align: center;
     justify-content: center;
-    
-}
-
-.footer{
     padding: 50px;
 }
 
@@ -286,12 +269,18 @@ button {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    display: flex; /* Cambia a flex para alinear los elementos en una fila */
 }
 
 .footer ul li {
-    display: inline; /* Cambia a inline para que los elementos se muestren en una fila */
+    margin-right: 90px; /* Ajusta el margen entre los elementos li según tus preferencias */
 }
 
-.footer ul li:not(:last-child) {
-    margin-right: 10px; /* Ajusta el margen entre los elementos li según tus preferencias */
+.footer ul li:last-child {
+    margin-right: 0; /* Elimina el margen derecho del último elemento */
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: #ffffff;
 }
