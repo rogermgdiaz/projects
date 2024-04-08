@@ -176,3 +176,110 @@ body {
     width: 12px;
     height: 12px; /* Color para indicar la imagen actual */
 }
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.primary-section {
+    background-color: #070715;
+}
+
+.card {
+    border: 1px solid rgba(56, 122, 202, 0.283);
+    background-color: rgb(227, 231, 233);
+    margin: 40px 24px 80px 24px;
+    padding: 10px;
+    width: 350px;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+}
+
+.card h1 {
+    margin-top: 32px;
+}
+
+.card h1 span{
+    color: #0037ff;
+}
+
+.card h2 {
+    margin-top: 48px;
+}
+
+.card ul {
+    margin-top: 40px;
+}
+
+.card li {
+    margin-top: 16px;
+}
+.card button {
+    margin-top: 60px;
+}
+
+.description {
+    margin-top: 0px;
+    height: 250px;
+}
+
+.price {
+    
+    font-size: 40px;
+}
+
+
+
+button {
+    background-color: #2c32d0;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.title-section{
+    color: #f0f1f3;
+    text-align: center;
+    justify-content: center;
+    margin-top: 60px;
+    font-size: 40px;
+}
+
+.title-section span{
+    color:#0037ff;
+}
+
+.footer {
+    background-color: #f0f1f3;
+    height: 30px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.footer{
+    padding: 50px;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer ul li {
+    display: inline; /* Cambia a inline para que los elementos se muestren en una fila */
+}
+
+.footer ul li:not(:last-child) {
+    margin-right: 10px; /* Ajusta el margen entre los elementos li según tus preferencias */
+}
