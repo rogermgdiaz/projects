@@ -185,6 +185,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 
@@ -283,4 +284,84 @@ button {
 .footer ul li a {
     text-decoration: none;
     color: #ffffff;
+}
+
+
+
+
+
+/* Contact Section */
+
+.contact-container {
+    background-color: rgba(227, 231, 233,0.2);
+    height: 500px;
+    width: 800px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.contact-container input[type="text"],
+.contact-container input[type="email"],
+.contact-container input[type="tel"],
+.contact-container textarea {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+}
+
+.contact-container input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-container input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.title-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-section {
+    background-image: url('../imgs/gym2.png');
+
+}
+
+.contact-title {
+    color: white;
+    font-size: 40px;
+}
+
+form {
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#button-contact{
+    background-color: #0037ff;
+    width: 200px;
+    margin-top: 20px;
+}
+
+.container-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
 }
