@@ -3,6 +3,9 @@ document.addEventListener("DOMContentLoaded", function() {
     const dotsContainer = document.querySelector(".carousel .slider-dots");
     let currentSlide = 0;
 
+    // Mostrar la primera imagen del carrusel cuando se carga la página por primera vez
+    carouselItems[currentSlide].style.opacity = 1;
+
     // Agregar un punto de navegación por cada slide
     carouselItems.forEach((item, index) => {
         const dot = document.createElement("div");
